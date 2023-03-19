@@ -1,37 +1,49 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-#title {
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section{
   background-color: #ff4c68;
   color: white;
 }
 
-.container-fluid {
-  padding: 3% 15%;
+.white-section{
+  background-color: white;
 }
 
-h1 {
-  font-family: "Montserrat";
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat';
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: "Montserrat";
   font-weight: bold;
 }
 
 p {
   color: #afafaf;
+}
+
+/* Heading */
+.big-heading{
+  font-family: "Montserrat";
+  font-weight: 900;
+
+  font-size: 3.5rem;
+  line-height: 1.5
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 
@@ -68,19 +80,25 @@ p {
 /* Titlle Image */
 
 .title-img {
-  width: 60%;
+  width: 300px;
   transform: rotate(25deg);
+  position: absolute;
+  left: 1180px;
+  top: 280px;
 }
 
 /* Features Section */
 
 #features {
-  padding: 7% 15%;
+  position: relative;
+}
+
+.feature-title{
+  font-size: 1.5rem;
 }
 
 .feature-box {
-  text-align: center;
-  padding: 8%;
+  padding: 4.5%;
 }
 
 .icon {
@@ -95,9 +113,12 @@ p {
 
 /* Testimonial Section*/
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: white;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-img {
@@ -106,14 +127,9 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -126,10 +142,31 @@ p {
 /* Pricing Section */
 #pricing {
   padding: 100px;
-  text-align: center;
 }
-
 
 .pricing-col {
   padding: 3% 2%;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* Media Queries */
+@media (max-width: 993px) {
+  .title-img {
+    position: static;
+    transform: rotate(0deg);
+  }
+  #title{
+    text-align: center;
+  }
+}
+
+
+/* Footer */
+.foot-icon{
+  margin: 20px;
 }
